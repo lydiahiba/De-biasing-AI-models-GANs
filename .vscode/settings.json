@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/lydiahiba/Documents/Projets fin periode Intensive/GANs Debiasing/my streamlit app/venv/bin/python3.8"
+    "python.pythonPath": "/Users/lydiahiba/Documents/Projets fin periode Intensive/GANs Debiasing/my streamlit app/venv/bin/python3.8",
+    "git.ignoreLimitWarning": true
 }
