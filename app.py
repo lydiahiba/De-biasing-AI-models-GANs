@@ -57,7 +57,7 @@ def main():
 
     features = get_random_features(feature_names, seed)
     control_features= st.text_input('Input your sentence here:') 
-    control_features='Smiling'
+    # control_features='Smiling'
     if control_features:
     # Insert user-controlled values from sliders into the feature vector.
 
@@ -79,8 +79,8 @@ def main():
         fake_classes_score.backward()
         noise.data = calculate_updated_noise(noise, 1 / grad_steps)
 
-    plt.rcParams['figure.figsize'] = [n_images * 2, grad_steps * 2]
-    st.image(show_tensor_images(torch.cat(fake_image_history[::skip], dim=2), num_images=n_images, nrow=n_images).numpy(),use_column_width=True)
+    plt.rcParams['figure.figsize'] = [n_images , grad_steps]
+    st.image(show_tensor_images(torch.cat(fake_image_history[::skip], dim=2), num_images=n_images, nrow=n_images).numpy(),width=200)
     # should be numpy array 
 
 
