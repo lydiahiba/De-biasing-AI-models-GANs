@@ -34,7 +34,7 @@ def main():
     Le style.css ajouter ici permet de centrer l'image 
     """
 
-    with open("style.css") as f:
+    with open("Static/css/style.css") as f:
         st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True) 
 
     st.title("Controlled Generation Face GAN")
@@ -87,7 +87,7 @@ def load_gen_model():
 
 @st.cache(allow_output_mutation=True)
 def load_classif_model():
-        """
+    """
     load the pretrained Classifier.
     """
     n_classes = 40
